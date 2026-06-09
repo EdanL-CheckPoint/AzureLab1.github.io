@@ -85,7 +85,8 @@
            <li>Resolve the issue and manage to connect via SSH to the active member no matter who is active</li>
          </ul>
         </li>
-        <li><b>Reminder:</b>Failing over the VIP can take up to 2 minutes!!</li>
+        <br>
+        <li><b>Reminder:</b>Doing failover, the VIP can take up to 2 minutes to transfer between VMs!!</li>
     </ul>
   </section>
   
@@ -98,7 +99,7 @@
     <ul>
         <li>Connect with SSH to the MGMT server</li>
         <li>If you are in expert mode, the machine is done with FTW. If not, wait until the VM finishes FTW and automatically reboots again.</li>
-        <l1>Check that the MGMT is completely up by running <code>api status</code>  |  Do not proceed forward before this is ready!</l1>
+        <li>Check that the MGMT is completely up by running <code>api status</code>  |  Do not proceed forward before this is ready!</li>
     </ul>
 
     <h3>Step 2</h3>
@@ -112,6 +113,8 @@
         <li>Open the network topology tab for eth1 and change the topology to "Override"</li>
         <img src="override.png" style="width: 30%; height: auto; display: block; margin-left: 0; margin-right: alt="override">
         <li>Push policy</li>
+        <br>
+        <li><b>Note: Changing the topology to "override" is not necessary a real world scenario. This step is there to fix a lab automation issue.</b></li>
     </ul>
 
   </section>
@@ -127,7 +130,12 @@
 
   <section id="Guidelines">
     <h2>Guidelines</h2>
-    <p>Email: example@email.com</p>
+    <ul>
+        <li>Confirm with your instructor on the solution for this lab</li>
+        <li>Once the lab is complete, please delete it by going to the menu in the top right corner in the CloudLabs page</li>
+        <li>Running the automgmt.sh script only works once, if it was done wrong, you must ask for a new lab</li>
+        <li>For any technical errors with the lab, please send a mail to edanl@checkpoint.com</li>
+    </ul>
   </section>
 
 </body>

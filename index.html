@@ -75,6 +75,18 @@
         <li>Customer losses VPN connectivity when failing over</li>
         <li>Failing back resolves the issue</li>
     </ul>
+    <p>Lab objectives</p>
+    <ul>
+        <li>As we will not have a VPN connection, we will simulate the scenario by connecting with SSH to the cluster VIP address</li>
+        <li>Starting the lab you will be able to connect by SSH to the active member with the VIP address, but after failing over you will not be able to connect to the second member when it is active</li>
+        <li><b>Goal:</b>
+         <ul>
+           <li>Find the root cause of the issue</li>
+           <li>Resolve the issue and manage to connect via SSH to the active member no matter who is active</li>
+         </ul>
+        </li>
+        <li><b>Reminder:</b>Failing over the VIP can take up to 2 minutes!!</li>
+    </ul>
   </section>
   
   <section id="PostDep">

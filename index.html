@@ -74,8 +74,23 @@
   </section>
   
   <section id="PostDep">
+
     <h2>Post Deployment Actions</h2>
-    <p>Email: example@email.com</p>
+
+    <h3>Step 1</h3>
+    <p>Make sure the MGMT server has finished FTW.</p>
+    <ul>
+        <li>Connect with SSH to the MGMT server</li>
+        <li>If you are in expert mode, the machine is ready. If not, wait until the VM finishes FTW and automatically reboots again.</li>
+    </ul>
+
+    <h3>Step 2</h3>
+    <p>Run the Auto-MGMT script.</p>
+    <ul>
+        <li>Connect with SSH to the MGMT server</li>
+        <li>Run the following command: <code>/var/log/automgmt.sh</code></li>
+    </ul>
+
   </section>
   
   <section id="Notes">
